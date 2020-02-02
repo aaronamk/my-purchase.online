@@ -10,6 +10,9 @@ firebase = pyrebase.initialize_app(config)
 
 auth = firebase.auth()
 
+# Get a reference to the database service
+db = firebase.database()
+
 username = ""
 password = ""
 
@@ -25,6 +28,16 @@ for arg_num in range(len(sys.argv)):
 
     if ((sys.argv[arg_num]) == "-p"):
         password = sys.argv[arg_num + 1]
+if (username == ""):
+    username = input("email: ")
 
+if (password == ""):
+    password = getpass("password: ")
 #authenticate a user
-user = auth.sign_in_with_email_and_password(input("Username: "), getpass("authentication password: "))
+user = auth.sign_in_with_email_and_password(username, password)
+
+#archer = {"name": "Sterling Archer", "agency": "Figgis Agency"} db.child("agents").push(archer, user['aaronamk@gmail.com'])
+
+#lana = {"name": "Lana Kane", "agency": "Figgis Agency"} db.child("agents").child("Lana").set(lana, user['idToken'])
+
+print(db.child("Apple").get(user['idToken']).val())
