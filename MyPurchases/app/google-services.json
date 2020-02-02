@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "511769343443",
+    "firebase_url": "https://my-purchases-bb5f8.firebaseio.com",
+    "project_id": "my-purchases-bb5f8",
+    "storage_bucket": "my-purchases-bb5f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511769343443:android:85c6f35778d5843c3c6b26",
+        "android_client_info": {
+          "package_name": "com.mangoes.mypurchases"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511769343443-kn9mbaeijfu7698acc02rbdnp0vlvas5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuQqtswpCHgPkqiXtiW0bh09kHfnoJc44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511769343443-kn9mbaeijfu7698acc02rbdnp0vlvas5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
